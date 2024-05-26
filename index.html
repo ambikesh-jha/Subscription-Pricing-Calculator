@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Upload and Subscription Pricing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subscription Pricing Calculator</h1>
+        
+        <div class="upload-section">
+            <h2>Upload CSV File Here.</h2>
+            <input type="file" id="csvFileInput" accept=".csv">
+            <progress id="uploadProgress" value="0" max="100"></progress>
+            <label id="uploadButton">Upload</label>
+            <div id="uploadStatus"></div>
+        </div>
+        
+        <div class="data-section hidden">
+            <h2>Uploaded Data</h2>
+            <input type="text" id="dataSearchInput" placeholder="Search by Email">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Credit Score</th>
+                        <th>Credit Lines</th>
+                        <th>Masked Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="pagination" id="dataPagination">
+                <button id="prevPage">Previous</button>
+                <span id="pageInfo"></span>
+                <button id="nextPage">Next</button>
+            </div>
+        </div>
+        
+        <div class="calculator-section hidden">
+            <h2>Pricing Calculator</h2>
+            <label for="basePrice">Base Price:</label>
+            <input type="number" id="basePrice" value="10"><br>
+            <label for="pricePerCreditLine">Price per Credit Line:</label>
+            <input type="number" id="pricePerCreditLine" value="2"><br>
+            <label for="pricePerCreditScorePoint">Price per Credit Score Point:</label>
+            <input type="number" id="pricePerCreditScorePoint" value="0.1"><br>
+            <button id="calculateButton">Calculate Prices</button>
+        </div>
+        
+        <div id="pricingResults" class="hidden">
+            <h2>Pricing Results</h2>
+            <input type="text" id="pricingSearchInput" placeholder="Search by Email">
+            <table id="pricingTable">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Subscription Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="pagination" id="pricingPagination">
+                <button id="prevPricePage">Previous</button>
+                <span id="pricePageInfo"></span>
+                <button id="nextPricePage">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
