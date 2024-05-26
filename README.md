@@ -2,7 +2,7 @@
 This web application allows users to upload a CSV file, display the data with pagination, and calculate subscription prices based on specific criteria. The application provides a user-friendly interface for data management and price calculation, ensuring a seamless and efficient user experience.
 
 ## Try Demo : 
-https://ambikesh-jha.github.io/SubscriptionPricingCalculator/
+https://ambikesh-jha.github.io/Subscription-Pricing-Calculator/
 
 ## Setup Instructions
 
@@ -97,7 +97,7 @@ https://ambikesh-jha.github.io/SubscriptionPricingCalculator/
 - **Demo and Explanation:**
    - The application's features and functionality are demonstrated effectively through an intuitive interface.
    - Detailed documentation provides clear setup instructions, usage guidelines, and feature descriptions.
-   - To try demo ,click here -> https://ambikesh-jha.github.io/SubscriptionPricingCalculator/
+   - To try demo ,click here -> https://ambikesh-jha.github.io/Subscription-Pricing-Calculator/
 
 ## Additional Information
 
